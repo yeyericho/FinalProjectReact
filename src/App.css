@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+body {
+  background: pink;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: "Roboto", sans-serif;
+}
+
+.App {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.Nav {
+  /* position:relative; */
+  background-color: teal;
+  height: 60px;
+  box-sizing: border-box;
+  padding: 10px 80px;
+}
+
+.App-header > h2 {
+  margin: 0;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.App-header > h2:hover {
+  color: #fff;
+}
+
+.search {
+  font-family: "Roboto", sans-serif;
+  position: absolute;
+  top: 12px;
+  right: 90px;
+}
+
+input,
+button {
+  font-family: "Roboto", sans-serif;
+}
+
+.search > input[type="text"] {
+  border: none;
+  padding: 8px 14px;
+  color: #666;
+  width: 230px;
+  font-size: 14px;
+  transition: all 0.3s ease-in-out;
+  background-color: #fff;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.search > button:focus {
+  outline: none;
+}
+
+.search > button {
+  border: none;
+  padding: 8px 14px;
+  color: #fff;
+  font-size: 14px;
+  background-color: #020202;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.search > button:hover {
+  background-color: #1c3f6e;
+  color: #fff;
+}
+
+.search > button:focus {
+  outline: none;
+}
+
+.App-intro {
+  font-size: 32px;
+  color: black;
+  font-weight: 600;
+  padding: 8px 80px;
+}
+
+.movies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.loader {
+  border: 12px solid #f3f3f3;
+  border-top-color: #22254b;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  animation: spin 2s linear infinite;
+}
+
+.movies > .movie {
+  width: 250px;
+  height: 400px;
+  position: relative;
+  margin: 1em;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.movies > .movie:hover {
+  box-shadow: 0 0 24px 0 rgba(255, 255, 255, 0.4);
+}
+
+.movies > .movie > div > img {
+  color: #ffffff;
+  height: 400px;
+  width: 250px;
+  object-fit: cover;
+}
+
+.movies > .movie > p {
+  position: absolute;
+  bottom: 0;
+  box-sizing: border-box;
+  width: 250px;
+  height: 50px;
+  margin: 0;
+  text-align: center;
+  padding: 12px 0;
+  font-weight: 600;
+  color: black;
+  background-color: paleturquoise;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(1turn);
+  }
+}
